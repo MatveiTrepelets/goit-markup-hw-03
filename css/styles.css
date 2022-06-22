@@ -1,0 +1,272 @@
+:root {
+    --brand-color: #2196F3;
+    --second-color:#757575;
+    --main-color:#212121;
+    --white-color:#FFFFFF; 
+}
+body{
+    font-family:'Roboto','Raleway',sans-serif;
+    position: relative;
+    color: var(--main-color);
+    font-size: 14px;
+    width: 1600px;
+    height: 2350px;
+} 
+.conteiner{
+    width: 1200px;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+ul{
+    list-style: none;
+}
+/*кнопки*/
+button{
+    background: #F5F4FA;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    border-radius: 4px;
+    border-color: var(--white-color);
+    display: flexbox; 
+}
+button:hover,
+button:focus{
+    background: var(--brand-color);
+    color: var(--white-color);
+    border-color: var(--brand-color);
+}
+/*ссылки*/
+a{
+    color: var(--main-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+a:hover,
+a:focus{
+    color: var(--brand-color);
+}
+/*телефон+почта*/
+.telmail{
+    color:var(--second-color) 
+    
+}
+.telmail2{
+    color:var(--second-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em; 
+}
+.address{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--white-color);
+}
+address{
+    font-style: normal;
+}
+/*Логотип*/
+.logo{
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    margin-top: 32px;
+    margin-right: 60px;
+}
+.logodown{
+    color: var(--white-color);
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+}
+/*Страница портфолио*/
+.portfolio > h2{
+    font-size: 18px;
+    line-height:2 ;
+}
+.portfolio > .text{
+    color:var(--second-color);
+    font-size: 16px;
+    line-height:2;
+    font-weight: 400;
+}
+/*Главная страница*/
+h1{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    margin-top: 200px;
+}
+.h1{
+    background-color: #2F303A;
+    height: 600px;
+    padding-top: 10px;
+}
+
+.order-services{
+    font-size: 16px;
+    line-height: 1.9;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    background-color: var(--brand-color);
+    color: var(--white-color);
+    border-color: var(--brand-color);
+    border-radius: 4px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 210px;
+    margin-left: 540px;
+}
+.order-services:hover,
+.order-services:focus{
+    background-color: #188CE8;
+}
+.about-us > h3{
+    font-size: 14px;
+    line-height: 1.1;
+}
+.about-us > p{
+    color: var(--second-color);
+    font-size:14px;
+    line-height: 1.7;
+}
+h2{
+    font-size: 36px;
+    line-height: 1.2;
+}
+.team > h3{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 2;
+}
+.team > p{
+    color: var(--second-color);
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 400;
+}
+.topick{
+    text-transform: uppercase;
+}
+footer{
+    background: #2F303A;
+    height: 252px;
+    padding-bottom: 60px ;
+    padding-top: 60px;
+    padding-right: 0px ;
+}
+.part1{
+    color: var(--brand-color);
+}
+.p{
+    display: none;
+}
+.current{
+    color: var(--brand-color);
+}
+.current-button{
+    background-color: var(--brand-color);
+    color: var(--white-color);
+    border-color: var(--brand-color) ;
+}
+nav{
+    display: flex;
+}
+.toplink{
+    display: flex;
+    margin-right: 330px ;
+}
+.telmail{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    
+}
+.topli{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.tellink{
+    display: flex;
+} 
+.toplink .topli + .topli{
+    margin-left: 50px;
+}
+.tellink .telmail + .telmail{
+    margin-left: 50px;
+}
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+div{
+    display: flex;
+    margin-top: 90px ;
+}
+div .about-us + .about-us{
+    margin-left: 30px;
+}
+.teamtopick{
+    margin-left: 470px;
+    margin-right: 470px;
+    margin-bottom: 50px ;
+}
+.ulteam{
+    display: flex;
+    width: 1170px;
+    padding-left: 0px ;
+}
+.ulteam li + li {
+    margin-left: 30px;
+}
+.work{
+    margin-left: 410px ;
+    margin-right: 410px;
+    margin-bottom: 50px;
+} 
+.work-img{
+    display: flex;
+    padding-left: 0px ;
+}
+.work-img li + li{
+    margin-left: 30px;
+}
+.portfolio-buttons{
+    display: flex;
+    margin-left: 295px;
+    margin-right: 295px;
+}
+.portfolio-buttons li + li{
+    margin-left: 8px;
+}
+.portfolio-list{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0px ;
+    margin-top: 55px;
+}
+.portfolio-list > li{
+    border-bottom: 20px;
+    margin-left:30px;
+    margin-bottom: 30px;
+}
+.footer-ul .footer-li + .footer-li{
+    margin-top: 10px ;
+}
+.footer-ul{
+    padding: 0px;
+    margin-top: 20px;
+}
+
