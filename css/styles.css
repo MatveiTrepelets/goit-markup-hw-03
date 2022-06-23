@@ -9,16 +9,25 @@ body{
     position: relative;
     color: var(--main-color);
     font-size: 14px;
-    width: 1600px;
-    height: 2350px;
 } 
+header{
+    border-bottom: 1px solid;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
 .conteiner{
     width: 1200px;
     margin-right: 200px;
     margin-left: 200px;
 }
+.dopdiv{
+    display: flex;
+}
 ul{
     list-style: none;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
 }
 /*кнопки*/
 button{
@@ -31,7 +40,6 @@ button{
     letter-spacing: 0.03em;
     border-radius: 4px;
     border-color: var(--white-color);
-    display: flexbox; 
 }
 button:hover,
 button:focus{
@@ -41,9 +49,13 @@ button:focus{
 }
 /*ссылки*/
 a{
-    color: var(--main-color);
     text-decoration: none;
-    font-weight: 500;
+    padding: 32px 0px; 
+    display: block;
+}
+.href{
+    color: var(--main-color);
+    font-weight: 500; 
 }
 a:hover,
 a:focus{
@@ -51,21 +63,22 @@ a:focus{
 }
 /*телефон+почта*/
 .telmail{
-    color:var(--second-color) 
-    
+    color:var(--second-color);
 }
 .telmail2{
     color:var(--second-color);
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    letter-spacing: 0.03em; 
+    letter-spacing: 0.03em;
+    padding: 0px 0px; 
 }
 .address{
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     color: var(--white-color);
+    padding: 0px 0px ;
 }
 address{
     font-style: normal;
@@ -76,8 +89,9 @@ address{
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
-    margin-top: 32px;
     margin-right: 60px;
+    display: block;
+    padding: 23px 0px;
 }
 .logodown{
     color: var(--white-color);
@@ -85,17 +99,28 @@ address{
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
+    padding: 0px 0px;
 }
 /*Страница портфолио*/
-.portfolio > h2{
+.portfolio > div > h2{
     font-size: 18px;
     line-height:2 ;
+    margin-top: 0px;
+    margin-bottom: 4px;
 }
-.portfolio > .text{
+.portfolio > div > .text{
     color:var(--second-color);
     font-size: 16px;
     line-height:2;
     font-weight: 400;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.portfolio > div{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 /*Главная страница*/
 h1{
@@ -106,20 +131,17 @@ h1{
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white-color);
-    margin-top: 200px;
 }
 .h1{
     background-color: #2F303A;
-    height: 600px;
-    padding-top: 10px;
+    padding: 200px 0px;
 }
 
 .order-services{
     font-size: 16px;
     line-height: 1.9;
     display: flex;
-    align-items: center;
-    text-align: center;
+    margin: 0px auto;
     letter-spacing: 0.06em;
     background-color: var(--brand-color);
     color: var(--white-color);
@@ -127,8 +149,7 @@ h1{
     border-radius: 4px;
     font-weight: bold;
     margin-top: 10px;
-    margin-bottom: 210px;
-    margin-left: 540px;
+    padding: 10px 32px 10px 32px ;
 }
 .order-services:hover,
 .order-services:focus{
@@ -147,23 +168,27 @@ h2{
     font-size: 36px;
     line-height: 1.2;
 }
-.team > h3{
+.team > div > h3{
     font-weight: 500;
     font-size: 16px;
     line-height: 2;
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
-.team > p{
+.team > div > p{
     color: var(--second-color);
     font-size: 16px;
     line-height: 1.2;
     font-weight: 400;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 .topick{
     text-transform: uppercase;
+    margin: 0px 0px 10px 0px ;
 }
 footer{
     background: #2F303A;
-    height: 252px;
     padding-bottom: 60px ;
     padding-top: 60px;
     padding-right: 0px ;
@@ -176,6 +201,8 @@ footer{
 }
 .current{
     color: var(--brand-color);
+    font-weight: 500; 
+
 }
 .current-button{
     background-color: var(--brand-color);
@@ -189,38 +216,30 @@ nav{
     display: flex;
     margin-right: 330px ;
 }
-.telmail{
-    margin-top: 25px;
-    margin-bottom: 25px;
-    
-}
-.topli{
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
 .tellink{
     display: flex;
 } 
-.toplink .topli + .topli{
-    margin-left: 50px;
-}
+
 .tellink .telmail + .telmail{
     margin-left: 50px;
 }
 .section{
     padding-top: 94px;
     padding-bottom: 94px;
+    padding-left: 0px ;
 }
-div{
+.div{
     display: flex;
     margin-top: 90px ;
 }
-div .about-us + .about-us{
+.div > .conteiner > .about-ul > li + li {
     margin-left: 30px;
 }
+.div > div .about-ul{
+    display: flex;
+}
 .teamtopick{
-    margin-left: 470px;
-    margin-right: 470px;
+    text-align: center;
     margin-bottom: 50px ;
 }
 .ulteam{
@@ -232,21 +251,21 @@ div .about-us + .about-us{
     margin-left: 30px;
 }
 .work{
-    margin-left: 410px ;
-    margin-right: 410px;
+    text-align: center;
     margin-bottom: 50px;
 } 
 .work-img{
     display: flex;
     padding-left: 0px ;
+    margin-top: 0px;
 }
 .work-img li + li{
     margin-left: 30px;
 }
 .portfolio-buttons{
     display: flex;
-    margin-left: 295px;
-    margin-right: 295px;
+    justify-content: center;
+    margin-bottom: 50px;
 }
 .portfolio-buttons li + li{
     margin-left: 8px;
@@ -255,12 +274,14 @@ div .about-us + .about-us{
     display: flex;
     flex-wrap: wrap;
     padding-left: 0px ;
-    margin-top: 55px;
+    margin-left:-30px;
+    margin-bottom: -30px;
 }
 .portfolio-list > li{
     border-bottom: 20px;
     margin-left:30px;
     margin-bottom: 30px;
+    border: 1px solid #EEEEEE;
 }
 .footer-ul .footer-li + .footer-li{
     margin-top: 10px ;
@@ -269,4 +290,20 @@ div .about-us + .about-us{
     padding: 0px;
     margin-top: 20px;
 }
-
+.topli{
+    padding-left: 50px ;
+}
+.team{
+    background-color: var(--white-color);
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.background{
+    background-color: #F5F4FA;
+    
+}
+.teambottom{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
