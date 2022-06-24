@@ -11,7 +11,8 @@ body{
     font-size: 14px;
 } 
 header{
-    border-bottom: 1px solid;
+    border-bottom: 1px #ECECEC;
+    ;
     margin: 0 0 0 0;
     padding: 0 0 0 0;
 }
@@ -40,6 +41,11 @@ button{
     letter-spacing: 0.03em;
     border-radius: 4px;
     border-color: var(--white-color);
+    font-weight: 500;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
 }
 button:hover,
 button:focus{
@@ -131,6 +137,7 @@ h1{
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white-color);
+    margin-top: 0px;
 }
 .h1{
     background-color: #2F303A;
@@ -216,10 +223,10 @@ nav{
 }
 .toplink{
     display: flex;
-    margin-right: 330px ;
 }
 .tellink{
     display: flex;
+    margin-left: auto;
 } 
 
 .tellink .telmail + .telmail{
@@ -232,7 +239,7 @@ nav{
 }
 .div{
     display: flex;
-    margin-top: 90px ;
+    padding-top: 94px;
 }
 .div > .conteiner > .about-ul > li + li {
     margin-left: 30px;
@@ -242,7 +249,10 @@ nav{
 }
 .teamtopick{
     text-align: center;
-    margin-bottom: 50px ;
+    padding-bottom: 50px ;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 .ulteam{
     display: flex;
@@ -293,7 +303,7 @@ nav{
     margin-top: 20px;
 }
 .topli{
-    padding-left: 50px ;
+    margin-left: 50px ;
 }
 .team{
     background-color: var(--white-color);
@@ -308,4 +318,9 @@ nav{
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
