@@ -11,8 +11,7 @@ body{
     font-size: 14px;
 } 
 header{
-    border-bottom: 1px #ECECEC;
-    ;
+    border-bottom: 1px solid #ECECEC;
     margin: 0 0 0 0;
     padding: 0 0 0 0;
 }
@@ -264,6 +263,7 @@ nav{
 }
 .work{
     text-align: center;
+    margin: 0;
     margin-bottom: 50px;
 } 
 .work-img{
